@@ -6,4 +6,6 @@ ENV discovery.type="single-node"
 
 ENV http.port=9200
 
+RUN bin/elasticsearch-plugin install analysis-kuromoji
+
 EXPOSE 9200/tcp
